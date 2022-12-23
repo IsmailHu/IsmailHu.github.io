@@ -46,9 +46,30 @@ nav{
 }
 
 .logo{
-    width: 140px;
+    width: 200px;
 
 }
+.shade1{
+    color:aqua;
+}
+.typer{
+    position:absolute;
+    width: 25px;
+    border: 1px solid #080808;
+    top: 360px;
+    left: 205px;
+    animation: hide 3s;
+}
+  
+@keyframes appear {
+    from {
+      visibility: visible;
+    }
+    to {
+      visibility: hidden;
+    }
+  }
+
 nav ul li{
     display: inline-block;
     list-style:none;
@@ -57,7 +78,7 @@ nav ul li{
 nav ul li a{
     color: #fff;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 22.5px;
     position: relative;
 }
 
@@ -65,7 +86,7 @@ nav ul li a::after{
     content: '';
     width: 0%;
     height: 3px;
-    background: #537545;
+    background: #299901;
     position: absolute;
     left: 0;
     bottom: -6px;
@@ -90,7 +111,7 @@ nav ul li a:hover::after{
     display: block;
     height: 100%;
     padding-left: 10px;
-    color: #537545;
+    color: #299901;
     animation: spin_words 10s;
 }
 .words{
@@ -159,21 +180,21 @@ nav ul li a:hover::after{
     content: '';
     width: 0;
     height: 3px;
-    background: #537545;
+    background: #299901;
     position: absolute;
     left: 0;
     bottom: -8px;
     transition: 0.5s;
 }
 .tab-links.active-link::after{
-    width: 50%;
+    width: 100%;
 }
 .tab-contents ul li{
    list-style: none;
    margin: 10px 0;
 }
 .tab-contents ul li span{
-    color: #537545;
+    color: #299901;
     font-size: 14px;
 }
 .tab-contents{
@@ -221,7 +242,7 @@ nav ul li a:hover::after{
 
 }
 .projects-list div:hover{
-    background: #537545;
+    background: #299901;
     transform: translateY(-10px);
 
 }
@@ -272,7 +293,7 @@ nav ul li a:hover::after{
 }
 .layer a{
     margin-top: 20px;
-    color: #537545;
+    color: #299901;
     text-decoration: none;
     font-size: 18px;
     line-height: 60px;
@@ -293,7 +314,7 @@ nav ul li a:hover::after{
     display: block;
     margin: 50px auto;
     width: fit-content;
-    border: 1px solid #537545;
+    border: 1px solid #299901;
     padding: 14px 50px;
     border-radius: 6px;
     text-decoration: none;
@@ -301,7 +322,7 @@ nav ul li a:hover::after{
     transition: background 0.5s;
 }
 .btn:hover {
-    background: #537545;
+    background: #299901;
 }
 /*-----------------CONTACT---------*/
 .contact-left{
@@ -315,7 +336,7 @@ nav ul li a:hover::after{
 
 }
 .contact-left p{
-    color: #537545;
+    color: #299901;
     margin-right: 15px;
     font-size: 25px;
 }
@@ -331,12 +352,12 @@ nav ul li a:hover::after{
     transition: transform 0.5s;
 }
 .social-icons a:hover{
-    color: #537545;
+    color: #299901;
     transform: translateY(-5px);
 }
 .btn.btn2{
     display: inline-block;
-    background: #537545;
+    background: #299901;
 
 }
 .contact-right form{
@@ -440,6 +461,19 @@ nav .fas{
     }
     .copyright{
         font-size: 14px;
+    }
+
+    @keyframes spin_words{
+        0%{
+            transform: translateY(-1000%);
+        }
+        25%{
+            transform: translateY(-30%);
+        }
+        
+    }
+    .typer{
+        visibility: hidden;
     }
 }
 #msg{
