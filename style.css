@@ -16,7 +16,7 @@ html{
 }
 body{
     background: #080808;
-    color: #fff;
+    color: #ffffff;
 }
 #header{
     width: 100%;
@@ -76,9 +76,9 @@ nav ul li{
     margin: 10px 20px;
 }
 nav ul li a{
-    color: #fff;
+    color: #299901;
     text-decoration: none;
-    font-size: 22.5px;
+    font-size: 18.5px;
     position: relative;
 }
 
@@ -118,26 +118,6 @@ nav ul li a:hover::after{
     overflow: hidden;
 }
 
-@keyframes spin_words{
-    0%{
-        transform: translateY(-700%);
-    }
-    25%{
-        transform: translateY(-530%);
-    }
-    46%{
-        transform: translateY(-390%);
-    }
-    60%{
-        transform: translateY(-260%);
-    }
-    83%{
-        transform: translateY(-150%);
-    }
-    100%{
-        transform: translateY(0%);
-}
-}
 /*------------------------------ABOUT SECTION------------------------------*/
 #about{
     padding: 80px 0;
