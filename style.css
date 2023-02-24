@@ -5,6 +5,16 @@
     box-sizing: border-box;
 
 }
+.welcome{
+    font-size: 200px;
+    margin-top: 300px;
+}
+
+.subtext{
+    margin-left: 30px;
+    margin-bottom: 100px;
+}
+
 /**:before,
 *after{
     padding: 0;
